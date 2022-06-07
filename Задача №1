@@ -5,9 +5,9 @@ using System;
     static void Main(string[] args)
     {
      
-        string str = "ЯЮниор";
+        string new = "ЯЮниор";
       
-        Console.WriteLine(str);
+        Console.WriteLine(new);
 
     
     }
