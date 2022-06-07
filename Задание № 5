@@ -1,0 +1,15 @@
+using System;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name = " Швейкин";
+            string surname = " Дмитрий";
+            Console.WriteLine ($"меня завут {name} и фамилия у меня {surname}");
+            (name, surname) = (surname, name);
+
+             Console.WriteLine($"меня завут {name} и фамилия у меня {surname}");
+
+    }
+    }
