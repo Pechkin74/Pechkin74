@@ -1,0 +1,24 @@
+using System;
+
+    class Program
+{
+    static void Main(string[] args)
+    {
+
+        string name = " Дмитрий";
+        int age = 33;
+        int heigjt = 174;
+        int weight = 80;
+        string city = " Челябинск";
+        string street = " Воровского";
+        string a = "A";
+        object hause = 19+a;
+        int flat = 78;
+        string thanks = " Спасибо Вам ";
+
+
+        Console.Write($" Имя: {name}, \n Возрост: {age} года, \n Рост: {heigjt} см, \n Вес: {weight} кг,");
+        Console.WriteLine($"\n Адрес проживания: \n город {city} ул.{street} дом {hause} квартира {flat}");
+        Console.WriteLine(thanks);
+    } 
+}
