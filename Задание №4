@@ -1,0 +1,17 @@
+using System;
+
+    class Program
+{
+    static void Main(string[] args)
+    {
+
+        string name = " Дмитрий";
+        int age = 33;
+        string zodiac = " Рыба";
+        string sity = " Челябинске";
+
+
+
+        Console.Write($" Меня завут {name}, мне {age} года. \n Знак задиака у меня {zodiac}, я родился в {sity} ");
+    }
+}
