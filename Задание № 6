@@ -1,0 +1,14 @@
+using System;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        int row = 3;
+        int full = 52;
+        int filledRow = full / row;
+        int beyondMeasure = full % row;
+        Console.WriteLine($" Заполненых рядов: {filledRow}");
+        Console.WriteLine($" Картинок сверх меры: { beyondMeasure}");
+        }
+    }
