@@ -4,14 +4,16 @@ using System;
 {
     static void Main(string[] args)
     {
-
-        string name = " Дмитрий";
-        int age = 33;
-        string zodiac = " Рыба";
-        string sity = " Челябинске";
-
-
-
-        Console.Write($" Меня завут {name}, мне {age} года. \n Знак задиака у меня {zodiac}, я родился в {sity} ");
+        Console.Write($"Как вас завут: ");
+        string name = Console.ReadLine();
+        Console.Write($"Сколько вам лет: ");
+        int age = Convert.ToInt32(Console.ReadLine());
+        Console.Write($"Какой у вас знак задиака: ");
+        string zodiac = Console.ReadLine();
+        Console.Write($"В каком городе вы живете: ");
+        string sity = Console.ReadLine();
+        Console.WriteLine("Благодорим вас за уделеное нам время. " + "О вас мы узнали следующию информацию :");
+        Console.Write($" Вас завут {name}, Вам {age} лет. \n Знак задиака у вас {zodiac}, \nВы проживаете в {sity} ");
     }
 }
+
