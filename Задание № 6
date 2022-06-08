@@ -8,7 +8,7 @@ using System;
         int full = 52;
         int filledRow = full / row;
         int beyondMeasure = full % row;
-        Console.WriteLine($" Заполненых рядов: {filledRow}");
+        Console.WriteLine($" Заполненных рядов: {filledRow}");
         Console.WriteLine($" Картинок сверх меры: { beyondMeasure}");
         }
     }
