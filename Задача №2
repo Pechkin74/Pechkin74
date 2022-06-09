@@ -4,7 +4,6 @@ using System;
 {
     static void Main(string[] args)
     {
-
         string name = " Дмитрий";
         int age = 33;
         int heigjt = 174;
@@ -15,8 +14,6 @@ using System;
         object hause = 19+a;
         int flat = 78;
         string thanks = " Спасибо Вам ";
-
-
         Console.Write($" Имя: {name}, \n Возрост: {age} года, \n Рост: {heigjt} см, \n Вес: {weight} кг,");
         Console.WriteLine($"\n Адрес проживания: \n город {city} ул.{street} дом {hause} квартира {flat}");
         Console.WriteLine(thanks);
