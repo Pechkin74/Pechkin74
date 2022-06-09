@@ -8,18 +8,10 @@ using System;
             Console.Write($"количество старушек стоящих в очереди:");
             int queueLength = Convert.ToInt32(Console.ReadLine());
             int receptionTime = 10;
-            int numberOfMinutesPerHour = 60;
+        int numberOfMinutesPerHour = 60;
             int waitingTime = queueLength * receptionTime;
             int numberOfMinutes = waitingTime % numberOfMinutesPerHour;
             int numberOfHours = waitingTime / numberOfMinutesPerHour;
-        if (waitingTime < 60)
-        {
-            Console.WriteLine($"Время ожидания в очереди составит {numberOfMinutes} минут");
-        }
-        if (waitingTime > 60)
-        {
-
-            Console.WriteLine($"Время ожидания в очереди составит {numberOfHours} часа {numberOfMinutes} минут");
-        }
+            Console.WriteLine($"Время ожидания в очереди составит {numberOfHours} часа {numberOfMinutes} минут");   
     }
     }
