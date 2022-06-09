@@ -11,6 +11,14 @@ using System;
             int waitingTime = queueLength * receptionTime;
             int numberOfMinutes = waitingTime % 60;
             int numberOfHours = waitingTime / 60;
-             Console.WriteLine($"Время ожидания в очереди составит {numberOfHours} часа {numberOfMinutes} минут");
-                         }
+             if (waitingTime < 60)
+        {
+            Console.WriteLine($"Время ожидания в очереди составит {numberOfMinutes} минут");
+        }
+        if (waitingTime > 60)
+        {
+
+            Console.WriteLine($"Время ожидания в очереди составит {numberOfHours} часа {numberOfMinutes} минут");
+        }
+    }
     }
