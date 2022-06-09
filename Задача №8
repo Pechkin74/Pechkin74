@@ -1,11 +1,6 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ConsoleApp8
-{
+
     class Program
     {
         static void Main(string[] args)
@@ -14,16 +9,8 @@ namespace ConsoleApp8
             int queueLength = Convert.ToInt32(Console.ReadLine());
             int receptionTime = 10;
             int waitingTime = queueLength * receptionTime;
-            if (waitingTime < 60)
-            {
-                Console.WriteLine($"Время ожидания в очереди составит {waitingTime} минут");
-            }
-            if (waitingTime>60)
-            {
-                int numberOfMinutes = waitingTime % 60;
-                int numberOfHours = waitingTime / 60;
-                Console.WriteLine($"Время ожидания в очереди составит {numberOfHours} часа {numberOfMinutes} минут");
-            }
-        }
+            int numberOfMinutes = waitingTime % 60;
+            int numberOfHours = waitingTime / 60;
+             Console.WriteLine($"Время ожидания в очереди составит {numberOfHours} часа {numberOfMinutes} минут");
+                         }
     }
-}
